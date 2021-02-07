@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript"
+  src="dygraph.js"></script>
+<link rel="stylesheet" src="dygraph.css" />
+</head>
+<body>
+    <p>VIB</p>
+    <div id="vib" style="width:95vw"></div>
+    <p>SKY</p>
+    <div id="sky" style="width:95vw"></div>
+    <p>PNT</p>
+    <div id="pnt" style="width:95vw"></div>
+
+<script type="text/javascript">
+  g = new Dygraph(
+    document.getElementById("sky"),
+    "/SKY.csv"
+  );
+  g = new Dygraph(
+    document.getElementById("vib"),
+    "/VIB.csv"
+  );
+  g = new Dygraph(
+    document.getElementById("pnt"),
+    "/PNT.csv"
+  );
+</script>
+<script type="text/javascript" src="site.js"></script>
+</body>
+</html>
