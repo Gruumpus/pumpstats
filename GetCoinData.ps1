@@ -25,5 +25,5 @@ foreach($x in $coins.Keys)
     $timestampProperty = @{label="Time";expression={(ConvertTimestamp $unixTimestamp $_.T)}}
     $priceProperty = @{label="Price";expression={$_.p}}
 
-    $json | Select $timestampProperty, $priceProperty | ConvertTo-Csv -NoTypeInformation | %{$_ -replace '"',''} | Out-File "$($x).csv" 
+    $json | Select $timestampProperty, $priceProperty | ConvertTo-Csv -NoTypeInformation | %{$_ -replace '"',''} | Out-File "data/$($x).csv"
 }

@@ -23,7 +23,7 @@ function drawGraphs(coins)
 
     new Dygraph(
       graphDiv,
-      `${x}.csv`
+      `data/${x}.csv`
     );
 
   });
