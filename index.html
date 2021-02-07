@@ -3,7 +3,7 @@
 <head>
 <script type="text/javascript"
   src="dygraph.js"></script>
-<link rel="stylesheet" src="dygraph.css" />
+<link rel="stylesheet" type="text/css" href="site.css" />
 </head>
 <body>
     <p>VIB</p>
@@ -16,17 +16,16 @@
 <script type="text/javascript">
   g = new Dygraph(
     document.getElementById("sky"),
-    "/SKY.csv"
+    "SKY.csv"
   );
   g = new Dygraph(
     document.getElementById("vib"),
-    "/VIB.csv"
+    "VIB.csv"
   );
   g = new Dygraph(
     document.getElementById("pnt"),
-    "/PNT.csv"
+    "PNT.csv"
   );
 </script>
-<script type="text/javascript" src="site.js"></script>
 </body>
 </html>
